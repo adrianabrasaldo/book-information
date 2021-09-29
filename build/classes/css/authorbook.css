@@ -1,0 +1,10 @@
+#saveAuthorButton {
+    -fx-background-color: #007E33;
+} 
+#updateAuthorButton {
+    -fx-background-color: #0d47a1;
+}
+#removeAuthorButton {
+    
+    -fx-background-color: #c00000;
+}

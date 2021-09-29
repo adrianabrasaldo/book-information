@@ -1,0 +1,67 @@
+.jfx-text-field, 
+.jfx-password-field, 
+.jfx-text-area, .jfx-combo-box {
+    -fx-font-size: 15px;
+    -fx-font-weight: Bold;
+    -fx-font: Roboto Medium;
+    -jfx-focus-color: #2e7d32;
+}
+.jfx-button {    
+    -fx-font-size: 16px;
+    -jfx-button-type: RAISED;
+    -fx-text-fill: white;
+    -fx-cursor: hand;
+    -fx-font-family: Roboto Medium; 
+    -fx-zfont-style: Regular;
+    -fx-font-weight: bold;
+    text-decoration: uppercase;
+}
+.tree-table-view.tree-table-row-cell .tree-table-cell {
+    -fx-font: Roboto Medium;
+    -fx-font-size: 18px;
+}
+.tree-table-view:focused .tree-table-row-cell:selected .tree-table-cell {
+    -fx-text-fill: darkgreen;
+    -fx-font-weight: Bold;
+}
+.tree-table-view .jfx-rippler {
+    -jfx-rippler-fill: -fx-tree-table-rippler-color;
+}
+.tree-table-view .column-header .label {
+    -fx-text-fill: #949494;
+    -fx-padding: 15 10 15 10;
+}
+.tree-table-view .tree-table-cell {
+    -fx-border-width: 0 0 0 0;
+    -fx-padding: 16 0 16 0;
+    -fx-alignment: top-center;
+}
+
+.tree-table-view .column-header-background {
+    -fx-border-width: 0 0.0 1 0;
+    -fx-border-color: green;
+}
+
+.jfx-tab-pane
+{
+   -fx-alignment: center;
+}
+.jfx-tab-pane .tab-label {
+    -fx-alignment: center;
+    -fx-font-size: 18px;    
+    -fx-padding: 15 10 15 10;
+    -fx-text-fill: white;;
+    -fx-background-color: #2e7d32;
+}
+.jfx-tab-pane .headers-region {
+    -fx-text-fill: black;
+    -fx-cursor: hand;
+    -fx-background-color: #2e7d32;
+}
+.jfx-tab-pane .tab-header-background {
+    -fx-background-color: #2e7d32;
+}
+.jfx-tab-pane .tab-selected-line {
+    -fx-stroke: #2e7d32;
+    -fx-stroke-width: 3pt;
+}

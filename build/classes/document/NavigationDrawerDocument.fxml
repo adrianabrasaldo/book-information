@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.net.URL?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox fx:id="vboxDrawer" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="628.0" prefWidth="233.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <JFXButton accessibleText="Books" alignment="CENTER" prefHeight="70.0" prefWidth="370.0" text="Books" />
+      <JFXButton accessibleText="Authors" alignment="CENTER" prefHeight="70.0" prefWidth="370.0" text="Authors" />
+   </children>
+   <effect>
+      <DropShadow color="#978d8d" height="15.0" radius="7.0" width="15.0" />
+   </effect>
+   <stylesheets>
+      <URL value="@../css/style.css" />
+      <URL value="@../css/drawer.css" />
+   </stylesheets>
+</VBox>

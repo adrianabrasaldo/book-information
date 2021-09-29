@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="Book Information.jnlp">
+  <information>
+    <title>Book Information</title>
+    <vendor>Acer</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="lib\commons-collections4-4.2.jar" size="752798" download="eager" />
+    <jar href="lib\commons-compress-1.18.jar" size="591748" download="eager" />
+    <jar href="lib\fontawesomefx-8.1.jar" size="179086" download="eager" />
+    <jar href="lib\jfoenix-8.0.7.jar" size="2631271" download="eager" />
+    <jar href="lib\mysql-connector-java-5.1.18-bin.jar" size="789885" download="eager" />
+    <jar href="lib\poi-4.0.0.jar" size="2715721" download="eager" />
+    <jar href="lib\poi-ooxml-4.0.0.jar" size="1758061" download="eager" />
+    <jar href="lib\poi-ooxml-schemas-4.0.0.jar" size="6477408" download="eager" />
+    <jar href="lib\xmlbeans-3.0.1.jar" size="2582300" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="Book Information" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="main.Main"  name="Book Information" />
+  <update check="always"/>
+</jnlp>

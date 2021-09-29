@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXTreeTableView?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import java.net.URL?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="stackpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="626.0" prefWidth="1227.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.BookController">
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <AnchorPane fx:id="container" layoutX="14.0" layoutY="14.0" prefHeight="595.0" prefWidth="513.0" style="-fx-background-color: white;" stylesheets="@../css/book.css">
+               <children>
+                  <GridPane hgap="15.0" layoutX="29.0" layoutY="88.0" vgap="45.0">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <JFXTextField fx:id="bookIDnoTextField" disable="true" labelFloat="true" prefHeight="38.0" prefWidth="220.0" promptText="ID" />
+                        <JFXTextField fx:id="bookISBNTextField" labelFloat="true" prefHeight="38.0" prefWidth="220.0" promptText="Book ISBN" GridPane.rowIndex="1" />
+                        <JFXTextField fx:id="bookTitleTextField" labelFloat="true" prefHeight="38.0" prefWidth="220.0" promptText="Book TItle" GridPane.rowIndex="2" />
+                        <JFXTextArea fx:id="bookDescriptionTextArea" labelFloat="true" prefHeight="93.0" prefWidth="220.0" promptText="Book Description" GridPane.rowIndex="3" />
+                        <JFXDatePicker fx:id="bookDatePicker" editable="false" overLay="true" prefHeight="31.0" prefWidth="220.0" promptText="Book Date" GridPane.rowIndex="4">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></JFXDatePicker>
+                        <JFXComboBox fx:id="bookMajorFormsComboBox" labelFloat="true" prefHeight="31.0" prefWidth="220.0" promptText="Major Forms" GridPane.columnIndex="1">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </JFXComboBox>
+                        <JFXComboBox fx:id="bookGenresComboBox" labelFloat="true" prefHeight="31.0" prefWidth="220.0" promptText="Book Genres" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </JFXComboBox>
+                        <JFXTextField fx:id="bookColorTextField" labelFloat="true" prefHeight="38.0" prefWidth="220.0" promptText="Book Color" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <JFXTextField fx:id="bookNoOfPagesTextField" labelFloat="true" prefHeight="38.0" prefWidth="220.0" promptText="Book No of Pages" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                        <JFXComboBox fx:id="bookShelfComboBox" labelFloat="true" prefHeight="31.0" prefWidth="220.0" promptText="Book Shelf" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </JFXComboBox>
+                     </children>
+                  </GridPane>
+                  <HBox layoutX="134.0" layoutY="532.0" prefHeight="49.0" prefWidth="332.0" spacing="10.0">
+                     <children>
+                        <JFXButton fx:id="saveBookButton" onAction="#bookHandleEvent" prefHeight="49.0" prefWidth="95.0" text="Save">
+                           <graphic>
+                              <FontAwesomeIcon fill="WHITE" iconName="SAVE" size="1.5em" />
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton fx:id="updateBookButton" onAction="#bookHandleEvent" prefHeight="49.0" prefWidth="110.0" text="Update">
+                           <graphic>
+                              <FontAwesomeIcon fill="WHITE" iconName="EDIT" size="1.5em" />
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton fx:id="deleteBookButton" onAction="#bookHandleEvent" prefHeight="49.0" prefWidth="102.0" text="Remove">
+                           <graphic>
+                              <FontAwesomeIcon fill="WHITE" iconName="TRASH" />
+                           </graphic>
+                        </JFXButton>
+                     </children>
+                  </HBox>
+                  <Label layoutX="32.0" layoutY="14.0" text="Book Form" textFill="#007e33">
+                     <font>
+                        <Font name="Roboto Black" size="25.0" />
+                     </font>
+                  </Label>
+                  <JFXButton fx:id="newBookButton" alignment="CENTER" contentDisplay="CENTER" layoutX="449.0" layoutY="14.0" onAction="#bookHandleEvent" prefHeight="50.0" prefWidth="50.0" text=" ">
+                     <graphic>
+                        <FontAwesomeIcon fill="WHITE" fontSmoothingType="LCD" iconName="MINUS_CIRCLE" size="2em" />
+                     </graphic>
+                  </JFXButton>
+               </children>
+               <effect>
+                  <DropShadow color="#867474" height="15.0" radius="7.0" width="15.0" />
+               </effect>
+            </AnchorPane>
+            <JFXTreeTableView fx:id="bookTableView" layoutX="544.0" layoutY="14.0" prefHeight="538.0" prefWidth="669.0" AnchorPane.bottomAnchor="74.0" AnchorPane.leftAnchor="544.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="14.0" />
+            <JFXButton fx:id="viewAuthorBookButton" layoutX="1052.0" layoutY="563.0" onAction="#bookHandleEvent" prefHeight="49.0" prefWidth="161.0" text="View Author's Book" AnchorPane.bottomAnchor="14.0" AnchorPane.rightAnchor="14.0" />
+         </children>
+      </AnchorPane>
+   </children>
+   <stylesheets>
+      <URL value="@../css/style.css" />
+      <URL value="@../css/book.css" />
+   </stylesheets>
+</StackPane>

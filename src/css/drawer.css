@@ -1,0 +1,10 @@
+.jfx-button {
+    -fx-font-size: 17px;
+    -jfx-button-type: FLAT;
+    -fx-background-radius: 0;
+    -fx-background-color: transparent;
+    -fx-text-fill: #2e7d32;
+}
+#vboxDrawer{
+    -fx-background-color: white;
+}

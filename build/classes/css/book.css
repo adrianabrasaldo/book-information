@@ -1,0 +1,21 @@
+#newBookButton {
+    -fx-background-color: #ff8800;    
+    -fx-background-radius: 100%;        
+}
+
+
+#saveBookButton {
+    -fx-background-color: #007E33;
+} 
+#updateBookButton {
+    -fx-background-color: #0d47a1;
+}
+#deleteBookButton {
+    
+    -fx-background-color: #c00000;
+}
+
+#viewAuthorBookButton {
+    
+    -fx-background-color: #0d47a1;
+}
